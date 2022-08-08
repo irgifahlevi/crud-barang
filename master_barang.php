@@ -58,7 +58,7 @@ require_once "koneksi.php";
                                             <td><?= $data['harga']; ?></td>
                                             <td>
                                                 <a href="hapus.php?barang_id=<?= $data['barang_id'] ?>" type="button" class="btn btn-sm btn-danger" onclick="return confirm('Lu yakin?')">Hapus Data</a>
-                                                <a href="" type="button" class="btn btn-sm btn-warning">Edit Data</a>
+                                                <a href="edit-barang.php?barang_id=<?= $data['barang_id'] ?>" type="button" class="btn btn-sm btn-warning">Edit Data</a>
                                             </td>
                                         </tr>
                                     <?php
