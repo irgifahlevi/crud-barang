@@ -54,33 +54,22 @@ if ($password) {
 
 <body>
     <div class="container">
-
         <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
-
                         <div class="card mb-3">
-
                             <div class="card-body">
-
                                 <div class="pt-4 pb-2">
                                     <h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
                                     <p class="text-center small">Enter your personal details to create account</p>
                                 </div>
-
                                 <form action="" method="POST" class="row g-3 needs-validation" novalidate>
-                                    <!-- <div class="col-12">
-                                        <label for="yourName" class="form-label">User ID</label>
-                                        <input type="text" name="user_id" class="form-control" id="yourName" required>
-                                        <div class="invalid-feedback">Please, enter User ID!</div>
-                                    </div> -->
                                     <div class="col-12">
                                         <label for="yourName" class="form-label">Nama Anggota</label>
                                         <input type="text" name="nama_anggota" class="form-control" id="yourName" required>
                                         <div class="invalid-feedback">Please, enter Nama Anggota!</div>
                                     </div>
-
                                     <div class="col-12">
                                         <label for="yourUsername" class="form-label">Username Login</label>
                                         <div class="input-group has-validation">
@@ -88,13 +77,11 @@ if ($password) {
                                             <div class="invalid-feedback">Please choose a username.</div>
                                         </div>
                                     </div>
-
                                     <div class="col-12">
                                         <label for="yourPassword" class="form-label">Password</label>
                                         <input type="password" name="password" class="form-control" id="yourPassword" required>
                                         <div class="invalid-feedback">Please enter your password!</div>
                                     </div>
-
                                     <div class="col-12">
                                         <button class="btn btn-primary w-100" type="submit" name="submit">Register</button>
                                     </div>
@@ -103,27 +90,17 @@ if ($password) {
                                                 in</a></p>
                                     </div>
                                 </form>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
-
     </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function() {
             'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
             var forms = document.querySelectorAll('.needs-validation')
-
-            // Loop over them and prevent submission
             Array.prototype.slice.call(forms)
                 .forEach(function(form) {
                     form.addEventListener('submit', function(event) {
@@ -131,20 +108,12 @@ if ($password) {
                             event.preventDefault()
                             event.stopPropagation()
                         }
-
                         form.classList.add('was-validated')
                     }, false)
                 })
         })()
     </script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
 </body>
 
 </html>

@@ -1,24 +1,14 @@
 <?php
 require_once "koneksi.php";
-
-
-
-
 ?>
-
-
 
 <!doctype html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <title>Hello, world!</title>
 </head>
 
@@ -74,15 +64,12 @@ require_once "koneksi.php";
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-
-
                             <h5 class="modal-title" id="exampleModalLabel">Tambah data</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <?php
                             require 'koneksi.php';
-
                             if (isset($_POST['submit'])) {
                                 $kode_barang = $_POST['kode_barang'];
                                 $nama_barang = $_POST['nama_barang'];
@@ -94,9 +81,7 @@ require_once "koneksi.php";
                                 echo "<script>alert('Data Berhasil di Tambahkan!')</script>";
                                 echo "<meta http-equiv='refresh' content='1' />";
                             }
-
                             ?>
-
                             <form action="master_barang.php" method="post" class="needs-validation" novalidate>
                                 <div class="row">
                                     <div class="col">
@@ -126,7 +111,6 @@ require_once "koneksi.php";
                                         <input type="number" name="harga" class="form-control" placeholder="Masukkan harga barang">
                                     </div>
                                 </div>
-
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
